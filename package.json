@@ -1,1 +1,39 @@
-{     "devDependencies": {         "yarnpkg": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-yarnpkg",     "homepage": "https://github.com/npmdoc/node-npmdoc-yarnpkg",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-yarnpkg.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [yarnpkg (v0.15.1)](https://github.com/yarnpkg/yarn#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-yarnpkg.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-yarnpkg) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-yarnpkg.svg)](https://travis-ci.org/npmdoc/node-npmdoc-yarnpkg)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "yarnpkg": "*"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-yarnpkg",
+    "keywords": [
+        "documentation",
+        "yarnpkg"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_yarnpkg.js",
+    "name": "npmdoc-yarnpkg",
+    "nameAlias": "npmdoc_yarnpkg",
+    "nameOriginal": "npmdoc-yarnpkg",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-yarnpkg.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
