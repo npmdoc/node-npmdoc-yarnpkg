@@ -1,4 +1,7 @@
-# api documentation for  [yarnpkg (v0.15.1)](https://github.com/yarnpkg/yarn#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-yarnpkg.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-yarnpkg) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-yarnpkg.svg)](https://travis-ci.org/npmdoc/node-npmdoc-yarnpkg)
+# npmdoc-yarnpkg
+
+#### basic api documentation for  [yarnpkg (v0.15.1)](https://github.com/yarnpkg/yarn#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-yarnpkg.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-yarnpkg) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-yarnpkg.svg)](https://travis-ci.org/npmdoc/node-npmdoc-yarnpkg)
+
 #### <p align="center">   <a href="https://yarnpkg.com/">     <img alt="Yarn" src="https://github.com/yarnpkg/assets/blob/master/yarn-kitten-full.png?raw=true" width="546">   </a> </p>
 
 [![NPM](https://nodei.co/npm/yarnpkg.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/yarnpkg)
